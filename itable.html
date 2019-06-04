@@ -1,0 +1,118 @@
+<style>
+  #itable {
+    width: 100%;
+    display: table;
+  }
+
+  #itable ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: table-row;
+  }
+
+  #itable li {
+    display: table-cell;
+    /* width: 13%; */
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid rgba(122, 160, 186, 0.5);
+    /*  margin-right: -1px;
+    margin-bottom: -1px;*/
+  }
+
+  #itable li.ith {
+    background: #86a3b7;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    height: 40px;
+  }
+
+  #itable li.ith-h{    
+    display: none;
+  }
+  
+  /* #itable ul.itr li {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 20px;
+    border: none !important;
+    padding: 10px 6px;
+    color: #fff;
+    font-size: 13px;
+  } */ 
+
+
+  #itable a {
+    color: #8e352e;
+    text-decoration: none;
+  }
+
+  #itable li.days  {
+    /*height: 280px;*/
+  }
+
+  #itable li.itd:hover {
+    background: #fcec92;
+    /*border: 1px solid black;*/
+  }
+
+
+
+  /* ============================
+    Mobile Responsiveness
+  ============================*/
+
+  @media(max-width: 768px) {
+     
+    #itable li.ith{
+      display: none;
+    }
+    #itable li{
+      display: block;
+      height: auto !important;
+      border: 1px solid rgba(122, 160, 186, 0.5);
+      width: 100%;
+      padding: 10px;
+      /* margin-bottom: -1px; */
+    }
+
+    #itable li.ith-h, #itable li.ith-h:hover {
+      display: block;
+      background: #7aa0ba;
+      color: white;
+    }
+  }
+
+</style>
+<div id="itable">
+  <ul class="itr ithead">
+    <li class="ith">學程</li>
+    <li class="ith">星期日</li>
+    <li class="ith">星期一</li>
+    <li class="ith">星期二</li>
+    <li class="ith">星期三</li>
+    <li class="ith">星期四</li>
+    <li class="ith">星期五</li>
+    <li class="ith">星期六</li>
+  </ul>
+  <ul class="itr tbody">
+    <li class="ith">社會與生活(學程)</li>
+    <li class="ith-h">社會與生活 星期日</li>
+    <li class="itd">0</li>
+    <li class="ith-h">社會與生活 星期一</li>
+    <li class="itd">1</li>
+    <li class="ith-h">社會與生活 星期二</li>
+    <li class="itd">2</li>
+    <li class="ith-h">社會與生活 星期三</li>
+    <li class="itd">3</li>
+    <li class="ith-h">社會與生活 星期四</li>
+    <li class="itd">4</li>
+    <li class="ith-h">社會與生活 星期五</li>
+    <li class="itd">5</li>
+    <li class="ith-h">社會與生活 星期六</li>
+    <li class="itd">6</li>
+  </ul>
+</div>
